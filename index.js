@@ -124,7 +124,7 @@ rsvpNo.onclick =() => {
   }).catch(console.error);
 }
 
-
+ 
 
 firebase.firestore().collection('attendees').where("attending", "==", true).onSnapshot(snap => { const newAttendeeCount = snap.docs.length; numberAttending.innerHTML = newAttendeeCount+' people going'; 
 })
